@@ -2,15 +2,19 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#D4AF37",
+        secondary: "#D0CECE",
+        tertiary: "#1A1A1A",
+      },
+      fontFamily: {
+        playfair: "var(--font-playfair)",
+        poppins: "var(--font-poppins)",
       },
     },
   },
