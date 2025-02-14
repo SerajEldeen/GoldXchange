@@ -47,9 +47,9 @@ async function Navbar() {
             <Image
               src="/Google.jpg"
               alt="Google"
-              width={35}
-              height={35}
-              className="rounded-md cursor-pointer hover:animate-bounce duration-2000 "
+              width={50}
+              height={50}
+              className="rounded-3xl cursor-pointer hover:animate-bounce duration-2000 "
               onClick={async () => {
                 "use server";
                 await signIn("google");
@@ -60,7 +60,7 @@ async function Navbar() {
               alt="GitHub"
               width={35}
               height={35}
-              className="rounded-md cursor-pointer hover:animate-bounce duration-2000 bg-white"
+              className="rounded-3xl cursor-pointer hover:animate-bounce duration-2000 bg-white "
               onClick={async () => {
                 "use server";
                 await signIn("github");
