@@ -3,6 +3,7 @@ import "./globals.css";
 import { Playfair_Display, Poppins } from "next/font/google";
 import ClientLayout from "@/components/Clientlayout";
 import QueryProvider from "@/hooks/QueryProvider";
+import { ToastContainer } from "react-toastify";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${poppins.variable}`}>
       <body className="font-poppins">
         <QueryProvider>
+          <ToastContainer />
           <Navbar />
           <ClientLayout>{children}</ClientLayout>
         </QueryProvider>

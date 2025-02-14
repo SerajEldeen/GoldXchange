@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
       <h2 className="text-xl font-semibold mt-4">3. Contact</h2>
       <p>
         If you have any privacy concerns, contact us at:{" "}
-        <strong>your@email.com</strong>
+        <strong>serageldeen13@email.com</strong>
       </p>
     </div>
   );
