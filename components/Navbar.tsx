@@ -55,6 +55,17 @@ async function Navbar() {
                 await signIn("google");
               }}
             />
+            <Image
+              src="/github.png"
+              alt="GitHub"
+              width={35}
+              height={35}
+              className="rounded-md cursor-pointer hover:animate-bounce duration-2000 bg-white"
+              onClick={async () => {
+                "use server";
+                await signIn("github");
+              }}
+            />
           </div>
         </>
       )}
