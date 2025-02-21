@@ -13,24 +13,8 @@ async function Navbar() {
               <h1 className="text-white font-poppins text-lg font-semibold">
                 Sign<span className="text-primary">Out</span>
               </h1>
-              <Link
-                href="/"
-                onClick={async (e) => {
-                  "use server";
-                  e.preventDefault();
-                  await signOut();
-                  window.location.href = "/";
-                }}
-              >
+              <Link href="/">
                 <Image
-                  src="/signout.png"
-                  alt="SignOut"
-                  width={30}
-                  height={30}
-                  className="rounded-md cursor-pointer hover:animate-bounce duration-2000"
-                />
-              </Link>
-              {/* <Image
                   src="/signout.png"
                   alt="SignOut"
                   width={30}
@@ -40,7 +24,8 @@ async function Navbar() {
                     "use server";
                     await signOut();
                   }}
-                /> */}
+                />
+              </Link>
             </div>
             <div className="flex gap-5">
               <h1 className="text-white font-poppins text-xl">
