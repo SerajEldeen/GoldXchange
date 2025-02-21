@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { auth, signIn, signOut } from "@/app/lib/auth";
-import Link from "next/link";
 
 async function Navbar() {
   const session = await auth();
@@ -13,19 +12,17 @@ async function Navbar() {
               <h1 className="text-white font-poppins text-lg font-semibold">
                 Sign<span className="text-primary">Out</span>
               </h1>
-              <Link href="/">
-                <Image
-                  src="/signout.png"
-                  alt="SignOut"
-                  width={30}
-                  height={30}
-                  className="rounded-md cursor-pointer hover:animate-bounce duration-2000  "
-                  onClick={async () => {
-                    "use server";
-                    await signOut();
-                  }}
-                />
-              </Link>
+              <Image
+                src="/signout.png"
+                alt="SignOut"
+                width={30}
+                height={30}
+                className="rounded-md cursor-pointer hover:animate-bounce duration-2000  "
+                onClick={async () => {
+                  "use server";
+                  await signOut();
+                }}
+              />
             </div>
             <div className="flex gap-5">
               <h1 className="text-white font-poppins text-xl">
